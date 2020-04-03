@@ -18,3 +18,5 @@ How many different telephone numbers are there in the records?
 Print a message:
 "There are <count> different telephone numbers in the records."
 """
+count = len(texts) + len(calls)
+print(f"There are {count} different telephone numbers in the records.")
