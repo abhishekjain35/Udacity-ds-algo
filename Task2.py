@@ -20,3 +20,11 @@ Print a message:
 September 2016.".
 """
 
+telephoneNumber = 0
+totalTime = 0
+for time in calls:
+    if totalTime < int(time[3]):
+        totalTime = int(time[3])
+        telephoneNumber = time[0]
+
+print(f"{telephoneNumber} spent the longest time, {totalTime} seconds, on the phone during September 2016.")
